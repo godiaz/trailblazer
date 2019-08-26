@@ -1,1 +1,75 @@
 // Specific CSS for your home-page
+.home-first {
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+
+.home-second {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1566832208/uganda_safari_home_1_rzjvsw.png');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-third {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1566832724/uganda_safari_home_2_dqqvez.png');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-fourth {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/v1566832723/uganda_safarI_home_3_j85dld.png');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
