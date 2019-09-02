@@ -4,6 +4,10 @@
   background-color: #202020;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567427319/ugandan-safari-about-first_weufnh.png');
   background-size: cover;
+
+  @include for-phone-only {
+    height: 40vh;
+  }
 }
 
 .about-second {

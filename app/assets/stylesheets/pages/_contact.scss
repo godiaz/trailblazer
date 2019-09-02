@@ -147,6 +147,15 @@
     // height: 130vh;
     padding: 120px 0 80px 20px;
 
+    hr {
+      width: 120px;
+      border-bottom: 1px solid white;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
     & form {
       width: 90vw;
       min-width: 80vw;
@@ -203,7 +212,7 @@
 
 .contact-second {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 
   @include for-medium-devices-down {
@@ -213,6 +222,7 @@
 
     .contact-map {
       width: 100%;
+      padding: 60px 40px 40px 20px;
 
       h2 {
         font-size: 30px;
