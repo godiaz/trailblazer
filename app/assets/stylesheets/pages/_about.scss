@@ -4,9 +4,59 @@
   background-color: #202020;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567427319/ugandan-safari-about-first_weufnh.png');
   background-size: cover;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  hr {
+    display: block;
+    width: 40px;
+    clear: both;
+    border-bottom: 2px solid white;
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-family: $primary-font;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
 
   @include for-phone-only {
     height: 40vh;
+    padding: 20px;
+
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  @include for-small-phone-only {
+
+    h1 {
+      font-size: 17px;
+    }
   }
 }
 
@@ -22,6 +72,123 @@
   width: 100%;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567423233/ugandan-safari-about-leaf_tibdfh.png');
   background-size: cover;
+  padding: 80px 40px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include for-medium-devices-down {
+    padding: 40px 20px;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  @include for-phone-only {
+    padding: 40px 20px;
+    flex-direction: column;
+    height: 130vh;
+  }
+
+  @include for-small-phone-only {
+    height: 160vh;
+  }
+}
+
+.about-third-left {
+  color: white;
+  height: 100%;
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  hr {
+    display: block;
+    width: 40px;
+    clear: both;
+    border-bottom: 2px solid white;
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-family: $primary-font;
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 44px;
+  }
+
+  p {
+    font-family: $secondary-font;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 0;
+    text-align: left;
+    width: 80%;
+    line-height: 30px;
+  }
+
+  @include for-large-devices-down {
+    & p {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  @include for-medium-devices-down {
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    & p {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+
+  @include for-phone-only {
+
+    h1 {
+      font-size: 22px;
+    }
+
+    & p {
+      width: 100%;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}
+
+.about-third-right {
+  @include absCenter;
+  height: 100%;
+  width: 100%;
+
+  & img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
 }
 
 .about-fourth {
@@ -29,4 +196,36 @@
   width: 100%;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567423389/ugandan-safari-about-stones_cv8o4x.png');
   background-size: cover;
+  padding: 40px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  hr {
+    display: block;
+    width: 40px;
+    clear: both;
+    border-bottom: 2px solid #3E3E3E;
+    margin-right: 10px;
+  }
+
+  h2 {
+    font-family: $secondary-font;
+    color: #3E3E3E;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-family: $primary-font;
+    color: #3E3E3E;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 44px;
+  }
 }
