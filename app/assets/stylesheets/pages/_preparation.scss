@@ -50,6 +50,13 @@
       font-size: 22px;
     }
   }
+
+  @include for-small-phone-only {
+
+    h1 {
+      font-size: 17px;
+    }
+  }
 }
 
 .preparation-second {
