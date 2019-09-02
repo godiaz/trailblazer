@@ -5,7 +5,25 @@
   <h1>Meet Our Dream Team</h1>
 </div>
 <div class="about-second">
+  <div class="slideshow-container">
 
+    <div class="mySlides1">
+      <div class="slide">
+        <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 50%;">
+      </div>
+    </div>
+
+    <div class="mySlides1">
+      <img src="https://images.pexels.com/photos/34299/herbs-flavoring-seasoning-cooking.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 50%;">
+    </div>
+
+    <div class="mySlides1">
+      <img src="https://images.pexels.com/photos/1051343/pexels-photo-1051343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 50%;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  </div>
 </div>
 <div class="about-third">
   <div class="about-third-left">
@@ -33,3 +51,42 @@
   </div>
   <h1>Partnerships</h1>
 </div>
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+<!-- <p>Slideshow 2:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://images.pexels.com/photos/34299/herbs-flavoring-seasoning-cooking.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="https://images.pexels.com/photos/1051343/pexels-photo-1051343.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div> -->
