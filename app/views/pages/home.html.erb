@@ -1,13 +1,39 @@
 <div class="swiper-container">
   <div class="home swiper-wrapper">
     <section class="home-first swiper-slide">
-      <%= cl_video_tag("ugandasafarifire_srpn97", :audio_codec=>"none", :effect=>"fade:1000", :autoplay=> true, :quality=>"auto", :loop=> true, :controls=> false) %>
+      <%= cl_video_tag("ugandasafarifire_srpn97", :audio_codec=>"none", :video_codec=>"auto", :quality=>"auto", :autoplay=> true, :loop=> true, :controls=> false) %>
+      <div class="home-first-content">
+        <%= cl_image_tag("ugandan-safari-uganda-flag_t2opqo.png", :quality=>"auto") %>
+        <h2>Discover The Mysteries of</h2>
+        <h1>UGANDA</h1>
+        <%= cl_image_tag("text-decoration_vjhrdn.png", :quality=>"auto") %>
+      </div>
     </section>
     <section class="home-second swiper-slide">
-
+      <div class="home-second-content">
+        <hr align="left">
+        <h2>Live the Adventure In</h2>
+        <h1>REAL LIFE</h1>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+          <br><br>
+          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+        </p>
+        <%= link_to 'Browse Safaris', safaris_path, class: "white-button-lg" %>
+      </div>
     </section>
     <section class="home-third swiper-slide">
-
+      <div class="home-third-content">
+        <hr align="right">
+        <h2>This is Not a Documentary</h2>
+        <h1>SEE THEM UP CLOSE</h1>
+        <p>
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+          <br><br>
+          If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+        </p>
+        <%= link_to 'Gorilla Trek', safaris_path, class: "white-button-lg" %>
+      </div>
     </section>
     <section class="home-fourth swiper-slide">
 

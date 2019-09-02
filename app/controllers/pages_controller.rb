@@ -5,16 +5,12 @@ class PagesController < ApplicationController
   def contact
     @markers =
       {
-        lat: 10.986914,
-        lng: -74.779365
+        lat: 0.338963,
+        lng: 32.594442
       },
       {
-        lat: 10.423356,
-        lng: -75.548130
-      },
-      {
-        lat: 4.661928,
-        lng: -74.109624
+        lat: 0.0436,
+        lng: 32.4418
       }
   end
 end

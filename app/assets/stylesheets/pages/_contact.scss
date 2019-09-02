@@ -24,7 +24,7 @@
   width: 100%;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1566918419/ugandan-safar-contact_jrpuxy.png');
   background-size: cover;
-  padding: 0 0 0 2vh;
+  padding: 0 0 0 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -142,15 +142,58 @@
       }
     }
   }
+
+  @include for-phone-only {
+    height: 130vh;
+    padding: 0 0 0 20px;
+
+    & form {
+      width: 90vw;
+      min-width: 80vw;
+
+      & fieldset {
+        & input, & textarea, & select {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  @include for-small-phone-only {
+    height: 150vh;
+  }
 }
 
 .contact-map {
-  display: flex;
+  padding: 60px 40px 40px 40px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1566921180/ugandan-safari-contact-left_dnzgl7.png');
   background-size: cover;
   background-position: left;
+  @include absColumnFSFS;
+
+  hr {
+    display: block;
+    width: 50px;
+    clear: both;
+    border-bottom: 2px solid #3E3E3E;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 40px;
+    color: #3E3E3E;
+  }
+
+  h3, p {
+    font-family: $secondary-font;
+    font-size: 18px;
+    color: #3E3E3E;
+    font-weight: 300;
+  }
 }
 
 #map {
@@ -160,17 +203,17 @@
 
 .contact-second {
   display: flex;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 
   @include for-medium-devices-down {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 220vh;
 
     .contact-map {
       width: 100%;
-      height: 100vh;
+      height: 120vh;
     }
 
     #map {

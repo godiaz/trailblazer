@@ -44,6 +44,27 @@
   justify-content: center;
 }
 
+@mixin absColumnFS {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@mixin absColumnFSFS {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin absColumnFE {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 // BOOTSTRAP MEDIA QUERIES WEB FIRST
 @mixin for-small-phone-only {
   @media (max-width: 320px) { @content; }

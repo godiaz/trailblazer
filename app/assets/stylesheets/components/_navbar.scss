@@ -4,6 +4,11 @@
   position: fixed;
   z-index: 9999;
   width: 100%;
+  padding: 10px 40px;
+
+  @include for-phone-only {
+    padding: 10px 10px;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
