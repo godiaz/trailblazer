@@ -1,4 +1,4 @@
-<div class="swiper-container">
+<div class="swiper-container swiper1">
   <div class="home swiper-wrapper">
     <section class="home-first swiper-slide">
       <%= cl_video_tag("ugandasafarifire_srpn97", :audio_codec=>"none", :quality=>"auto", :autoplay=> true, :loop=> true, :controls=> false, :playsinline=> true) %>
@@ -40,7 +40,7 @@
     </section>
   </div>
   <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
+  <div class="swiper-pagination swiper-pagination1"></div>
 <!--   <span class="swiper-button-next">O</span>
   <span class="swiper-button-prev">L</span> -->
 </div>
@@ -49,14 +49,14 @@
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper('.swiper-container', {
+  var swiper1 = new Swiper('.swiper1', {
       direction: 'vertical',
       slidesPerView: 1,
       spaceBetween: 30,
       mousewheel: true,
       uniqueNavElements: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination1',
         clickable: true,
       },
 

@@ -76,7 +76,8 @@
 }
 
 .text-separator {
-  height: 100%;
+  height: auto;
+  width: 150px;
   margin: 0 30px;
 
   @include for-medium-devices-down {
