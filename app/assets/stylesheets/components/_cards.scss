@@ -4,13 +4,14 @@
   max-width: 320px;
   min-width: 320px;
   height: 400px;
-  background-color: none;
+  background-color: #ddd;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567614994/uganda_safari_review_card_2_sndpsb.png');
   overflow: hidden;
   background-size: cover;
   border-radius: 9px;
   @include absColumnFSFS;
   padding: 20px 30px;
+  border: 1px solid #ddd;
 
   &_header {
     display: flex;
@@ -94,12 +95,13 @@
   max-width: 320px;
   min-width: 320px;
   height: 400px;
-  background-color: none;
+  background-color: #ddd;
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1567614994/uganda_safari_reviews_card_tmmhgv.png');
   background-size: cover;
   border-radius: 9px;
   @include absColumnFSFS;
   padding: 20px 30px;
+  border: 1px solid #ddd;
 
   &_header {
     display: flex;
