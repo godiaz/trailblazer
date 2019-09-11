@@ -331,7 +331,39 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
+  @include absCenter;
+
 }
+
+.home-fifth {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  @include absCenter;
+
+  &_content {
+    @include absCenterColumn;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+
+    &_button {
+      margin: 20px 0;
+      color: white;
+      background-color: black;
+      padding: 10px 20px;
+      border-radius: 50px;
+
+      &:hover {
+        text-decoration: none;
+        background-color: #444444;
+        color: white;
+      }
+    }
+  }
+}
+
 
 html, body {
     position: relative;

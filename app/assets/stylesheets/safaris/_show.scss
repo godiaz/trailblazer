@@ -1,0 +1,187 @@
+.safari-show {
+
+}
+
+.safari-show-banner {
+  height: 60vh;
+  width: 100%;
+  background-color: #ddd;
+  padding: 40px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    hr {
+      display: block;
+      width: 20px;
+      clear: both;
+      border-bottom: 2px solid white;
+      margin-right: 10px;
+      color: white;
+    }
+
+    h2 {
+      font-family: $secondary-font;
+      color: white;
+      font-size: 14px !important;
+      font-weight: 300;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  & h1 {
+    text-align: left;
+    width: 100%;
+    font-family: $primary-font;
+    color: white;
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  & h2 {
+    text-align: left;
+    width: 100%;
+    font-family: $secondary-font;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    width: 80vw;
+  }
+
+
+  & a {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: white;
+    font-family: $secondary-font;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    margin: 10px 0;
+    // position: absolute;
+    //   bottom: 40px;
+    //   right: 40px;
+
+
+    &:hover {
+      text-decoration: none;
+      background-color: #FAFAFA;
+    }
+  }
+}
+
+.safari-show-content {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568133636/ugandan-safrar-safari-show_txz6cp.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.safari-show-attractions {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568193522/ugandan-safari-show_rrxhjo.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  &_header {
+    padding: 40px 40px 20px 40px;
+    color: white;
+
+    &_title {
+      display: flex;
+      align-items: center;
+
+      hr {
+        display: block;
+        width: 40px;
+        clear: both;
+        border-bottom: 2px solid white;
+        margin-right: 10px;
+      }
+
+      h2 {
+        font-family: $secondary-font;
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    & h1 {
+      font-family: $primary-font;
+      font-weight: 700;
+    }
+  }
+
+  &_content {
+    display: flex;
+    align-items: flex-start;
+
+    &_image {
+      margin: 40px 20px 40px 40px;
+
+      & img {
+        height: 100%;
+        width: 50vw;
+        border: 1px solid #ddd;
+      }
+    }
+
+    &_text {
+      margin: 40px 40px 40px 20px;
+      height: 100%;
+      width: 50vw;
+      // background-color: #ddd;
+      color: white;
+      position: relative;
+
+      & h1 {
+        font-family: $primary-font;
+        font-weight: 700;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      & p {
+        padding-top: 20px;
+        font-family: $secondary-font;
+        font-weight: 100;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+
+      & a {
+        font-family: $secondary-font;
+        margin-top: 40px;
+        font-weight: 600;
+        padding: 10px 25px;
+        background-color: white;
+        border-radius: 50px;
+        color: black;
+        font-size: 18px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.safari-show-stay {
+  background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568133636/ugandan-safrar-safari-show_txz6cp.png');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}

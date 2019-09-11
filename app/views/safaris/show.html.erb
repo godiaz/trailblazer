@@ -1,0 +1,38 @@
+<div class="safari-show">
+  <div class="safari-show-banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url('<%= cl_image_path @safari.banner_image %>'); background-size: cover;">
+    <div class="safari-show-banner_header">
+        <hr align="left"><h2>SAFARI</h2>
+    </div>
+    <h1><%= @safari.title %></h1>
+    <h2><%= @safari.description %></h2>
+    <%= link_to 'Book Trip', contact_path %>
+  </div>
+  <div class="safari-show-content">
+
+  </div>
+  <div class="safari-show-attractions">
+    <div class="safari-show-attractions_header">
+      <div class="safari-show-attractions_header_title">
+        <hr align="left"><h2>TRIP GUIDE</h2>
+      </div>
+      <h1>Look Out For</h1>
+    </div>
+    <% @safari_attractions.first(1).each do |attraction| %>
+      <div class="safari-show-attractions_content">
+        <div class="safari-show-attractions_content_image">
+          <%= cl_image_tag attraction.attraction.image %>
+        </div>
+        <div class="safari-show-attractions_content_text">
+          <h1><%= attraction.attraction.title %></h1>
+          <p><%= attraction.attraction.description %></p>
+          <%= link_to 'More Information', contact_path %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="safari-show-stay">
+    <% @safari_hotels.each do |hotel| %>
+      <p><%= hotel.hotel.title %></p>
+    <% end %>
+  </div>
+</div>

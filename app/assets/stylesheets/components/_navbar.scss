@@ -8,6 +8,7 @@
 
   @include for-phone-only {
     padding: 10px 10px;
+    background-color: rgba(0,0,0,0.6);
   }
 }
 
@@ -50,4 +51,8 @@
 .navbar-toggler {
   border: 1px solid white;
   background: white;
+
+  &:focused {
+    outline: 0;
+  }
 }
