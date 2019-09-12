@@ -7,8 +7,7 @@ class SafarisController < ApplicationController
   end
 
   def show
-    # @attraction = Attraction.find(params[:id])
-    # @hotel = Hotel.find(params[:id])
+    @schedules = Schedule.where(safari: @safari)
     @safari_hotels = SafariHotel.where(safari: params[:id])
     @safari_attractions = SafariAttraction.where(safari: params[:id])
   end
@@ -52,6 +51,6 @@ class SafarisController < ApplicationController
   end
 
   def safari_params
-    safariParams = params.require(:safari).permit(:banner_image, :title, :description, :itinerary_description, :price, :hotels_description, :includes_description)
+    safariParams = params.require(:safari).permit(:banner_image, :title, :description, :itinerary_description, :expect, :price, :hotels_description, :includes_description)
   end
 end

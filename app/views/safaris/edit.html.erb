@@ -8,9 +8,16 @@
       <%= f.input :title %>
       <%= f.input :description %>
       <%= f.input :itinerary_description %>
+      <%= f.input :expect %>
+      <%= f.input :includes_description %>
       <%= f.input :hotels_description %>
       <%= f.input :price %>
       <%= f.submit %>
+    <% end %>
+    <%= simple_form_for [@safari, Schedule.new] do |f| %>
+        <%= f.input :title %>
+        <%= f.input :description %>
+        <%= f.submit %>
     <% end %>
     <%= simple_form_for [@safari, SafariHotel.new] do |f| %>
         <%= f.input :hotel_id, as: :check_boxes,collection: Hotel.all %>

@@ -24,10 +24,11 @@ puts "Creating Safaris"
       user: User.first,
       banner_image: Faker::LoremPixel.image,
       title: Faker::Name.name,
-      description: Faker::Lorem.sentences(2),
+      expect: Faker::Lorem.sentences,
+      description: Faker::Lorem.sentences,
       itinerary_description: Faker::Lorem.sentences,
       price: Faker::Number.number(4),
-      hotels_description: Faker::Lorem.sentences(2),
+      hotels_description: Faker::Lorem.sentences,
       includes_description: Faker::Lorem.sentences
     )
 end

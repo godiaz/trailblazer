@@ -1,9 +1,20 @@
+.safari-text-separator {
+  height: 100%;
+  max-height: 700px;
+  padding: 0 40px;
+
+  @include for-large-devices-down {
+    display: none;
+  }
+}
+
+
 .safari-show {
 
 }
 
 .safari-show-banner {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background-color: #ddd;
   padding: 40px;
@@ -45,6 +56,7 @@
     color: white;
     font-weight: 700;
     font-size: 34px;
+    margin-bottom: 20px;
   }
 
   & h2 {
@@ -67,10 +79,6 @@
     color: black;
     font-size: 18px;
     margin: 10px 0;
-    // position: absolute;
-    //   bottom: 40px;
-    //   right: 40px;
-
 
     &:hover {
       text-decoration: none;
@@ -82,18 +90,87 @@
 .safari-show-content {
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568133636/ugandan-safrar-safari-show_txz6cp.png');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+
+  &_itinerary {
+    width: 100%;
+    height: 100%;
+
+    &_header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      hr {
+        display: block;
+        width: 20px;
+        clear: both;
+        border-bottom: 2px solid #3E3E3E;
+        margin-right: 10px;
+        color: #444;
+      }
+
+      h2 {
+        font-family: $secondary-font;
+        color: #3E3E3E;
+        font-size: 14px !important;
+        font-weight: 300;
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    & h1 {
+      text-align: left;
+      width: 100%;
+      font-family: $primary-font;
+      color: #3E3E3E;
+      font-weight: 800;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      font-family: $secondary-font;
+      font-weight: 200;
+      font-size: 18px;
+      color: #3E3E3E;
+    }
+
+    &_one {
+      width: 100%;
+    }
+
+    &_two {
+      width: 100%;
+    }
+  }
+
+  &_schedule {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include for-large-devices-down {
+    flex-direction: column;
+    padding: 40px 40px;
+  }
 }
 
 .safari-show-attractions {
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568193522/ugandan-safari-show_rrxhjo.png');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  padding: 40px;
 
   &_header {
-    padding: 40px 40px 20px 40px;
+    padding: 0px 0px 20px 0px;
     color: white;
 
     &_title {
@@ -127,21 +204,24 @@
   &_content {
     display: flex;
     align-items: flex-start;
+    width: 100%;
 
     &_image {
-      margin: 40px 20px 40px 40px;
+      margin: 40px 20px 0px 0px;
+      width: 100%;
+      height: 100%;
 
       & img {
         height: 100%;
-        width: 50vw;
+        width: 100%;
         border: 1px solid #ddd;
       }
     }
 
     &_text {
-      margin: 40px 40px 40px 20px;
+      margin: 40px 0px 0px 20px;
       height: 100%;
-      width: 50vw;
+      width: 100%;
       // background-color: #ddd;
       color: white;
       position: relative;
@@ -173,15 +253,167 @@
 
         &:hover {
           text-decoration: none;
+          background-color: #F1F1F1;
         }
       }
     }
+
+    @include for-large-devices-down {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &_image {
+        margin: 0;
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &_text {
+        margin: 40px 0 40px 0;
+        width: 100%;
+      }
+    }
   }
+
 }
 
 .safari-show-stay {
   background-image: url('https://res.cloudinary.com/trailblazer-safari/image/upload/q_auto/v1568133636/ugandan-safrar-safari-show_txz6cp.png');
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-betwen;
+  padding: 40px;
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    hr {
+      display: block;
+      width: 20px;
+      clear: both;
+      border-bottom: 2px solid #3E3E3E;
+      margin-right: 10px;
+      color: #444;
+    }
+
+    h2 {
+      font-family: $secondary-font;
+      color: #3E3E3E;
+      font-size: 14px !important;
+      font-weight: 300;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  & h1 {
+    text-align: left;
+    width: 100%;
+    font-family: $primary-font;
+    color: #3E3E3E;
+    font-weight: 800;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-family: $secondary-font;
+    font-weight: 200;
+    font-size: 18px;
+    color: #3E3E3E;
+  }
+
+  &_includes {
+    width: 100%;
+    height: 100%;
+
+    &_one {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &_two {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &_transport {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include for-large-devices-down {
+    flex-direction: column;
+  }
+}
+
+.safari-hotel-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: space-between;
+
+  & img {
+    height: auto;
+    width: 100%;
+  }
+
+  & h1 {
+    margin-top: 40px;
+  }
+
+  & p {
+    width: 100%;
+  }
+}
+
+
+.hotels-slide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  & h1 {
+    margin-top: 10px;
+    font-family: $secondary-font;
+    font-weight: 300;
+    background-color: #202020;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  & p {
+    font-family: $secondary-font;
+    font-weight: 300;
+    color: #202020;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.swiper5 {
+  position: relative;
+}
+
+.swiper-pagination5 {
+  & span {
+    background-color: #202020;
+  }
+}
+
+.day-next, .day-prev {
+  position: absolute !important;
+    top: 98%;
 }

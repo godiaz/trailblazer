@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_09_160948) do
+ActiveRecord::Schema.define(version: 2019_09_12_111818) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_09_09_160948) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.string "expect"
     t.index ["user_id"], name: "index_safaris_on_user_id"
   end
 
@@ -73,6 +74,8 @@ ActiveRecord::Schema.define(version: 2019_09_09_160948) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "safari_id"
+    t.index ["safari_id"], name: "index_schedules_on_safari_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -94,4 +97,5 @@ ActiveRecord::Schema.define(version: 2019_09_09_160948) do
   add_foreign_key "safari_hotels", "hotels"
   add_foreign_key "safari_hotels", "safaris"
   add_foreign_key "safaris", "users"
+  add_foreign_key "schedules", "safaris"
 end

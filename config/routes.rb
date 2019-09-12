@@ -11,10 +11,10 @@ Rails.application.routes.draw do
   resources :safaris do
       resources :safari_hotels, only: [:create]
       resources :safari_attractions, only: [:create]
+      resources :schedules
   end
 
   resources :hotels
-  resources :schedules
   resources :attractions
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

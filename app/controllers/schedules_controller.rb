@@ -3,7 +3,7 @@ class SchedulesController < ApplicationController
   before_action :set_schedule, only: [:show, :edit, :update, :destroy]
 
   def index
-    @schedules = Schedules.all
+    @schedules = Schedule.all
   end
 
   def show
@@ -14,10 +14,11 @@ class SchedulesController < ApplicationController
   end
 
   def create
+    @safari = Safari.find(params[:safari_id])
     @schedule = Schedule.new(schedule_params)
-    @schedule.user = current_user
+    @schedule.safari = @safari
     if @schedule.save
-      redirect_to schedule_path
+      redirect_to safaris_path
     else
       render :new
     end
