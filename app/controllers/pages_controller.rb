@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :privacy, :about, :contact, :reviews]
+  skip_before_action :authenticate_user!, only: [:home, :privacy, :about, :contact, :reviews, :preparation]
 
   def home
     @safaris = Safari.all
