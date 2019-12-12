@@ -105,6 +105,7 @@
           <div class="swiper-slide safari-hotel-slide">
             <%= cl_image_tag hotel.hotel.image %>
             <h1><%= hotel.hotel.title %></h1>
+            <h6><%= hotel.hotel.price_night %>Per Night</h6>
             <p><%= hotel.hotel.description %></p>
           </div>
         <% end %>

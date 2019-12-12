@@ -36,8 +36,9 @@ class SchedulesController < ApplicationController
   end
 
   def destroy
+    safari = @schedule.safari
     @schedule.destroy
-    redirect_to schedules_path
+    redirect_to safari_path(safari)
   end
 
   private

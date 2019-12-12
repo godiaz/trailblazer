@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   resources :safaris do
       resources :safari_hotels, only: [:create]
       resources :safari_attractions, only: [:create]
-      resources :schedules
+      resources :schedules, except: [:delete]
   end
 
+  resources :schedules, only: [:delete]
   resources :hotels
   resources :attractions
 

@@ -33,6 +33,18 @@ puts "Creating Safaris"
     )
 end
 
+Safari.create!(
+    user: User.first,
+    banner_image: Faker::LoremPixel.image,
+    title: Faker::Name.name,
+    expect: Faker::Lorem.sentences,
+    description: Faker::Lorem.sentences,
+    itinerary_description: Faker::Lorem.sentences,
+    price: Faker::Number.number(4),
+    hotels_description: Faker::Lorem.sentences,
+    includes_description: Faker::Lorem.sentences
+  )
+
 puts "Safaris created."
 
 

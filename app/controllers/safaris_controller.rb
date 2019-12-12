@@ -28,6 +28,7 @@ class SafarisController < ApplicationController
 
   def edit
     @hotel = Hotel.new
+    @schedule = Schedule.where(safari: @safari)
   end
 
   def update

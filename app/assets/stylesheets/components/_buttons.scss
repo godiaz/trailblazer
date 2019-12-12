@@ -22,3 +22,17 @@
     padding: 8px 20px;
   }
 }
+
+.home-fourth_content_button {
+  background-color: blue;
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: blue;
+    opacity: 0.8;
+    color: white;
+  }
+}

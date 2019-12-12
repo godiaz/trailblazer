@@ -1,3 +1,3 @@
 class Schedule < ApplicationRecord
-  belongs_to :safari, dependent: :destroy
+  belongs_to :safari
 end
