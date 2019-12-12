@@ -36,3 +36,14 @@
     color: white;
   }
 }
+
+.delete-button {
+  padding: 10px 20px;
+  border-radius: 200px;
+  color: white;
+  background-color: red;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
