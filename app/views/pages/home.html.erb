@@ -45,7 +45,7 @@
           <div class="swiper-wrapper">
             <% @safaris.each do |safari|  %>
                 <%= link_to safari_path(safari), class: "swiper-slide safari-card", style: "" do %>
-                  <div style="padding: 20px; height: 100%; width: 100%; background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('<% if safari.banner_image.present? %><%= cl_image_path safari.banner_image %><% else %><%= image_tag 'https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt: "london web design" %><% end %>'); background-size: cover;">
+                  <div style="padding: 20px; height: 100%; width: 100%; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url('<% if safari.banner_image.present? %><%= cl_image_path safari.banner_image %><% else %><%= image_tag 'https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', alt: "london web design" %><% end %>')">
                     <div class="safari-card_header">
                       <hr align="left"><h2>SAFARI</h2>
                     </div>
