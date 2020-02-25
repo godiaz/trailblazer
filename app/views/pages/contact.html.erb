@@ -5,7 +5,7 @@
       <hr align="left">
       <h2>PLEASE FILL OUT DETAILS</h2>
     </div>
-    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+    <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/mhenry@trailblazer.co.ug E" method="post">
       <fieldset id="fs-frm-inputs">
         <label for="name">1. Your Details</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
@@ -14,11 +14,9 @@
           <label for="timely">2. Travel Details</label>
           <select name="timely" id="timely" required="">
             <option value="Choose" selected="" disabled="">Safari of Interest</option>
-            <option value="1">Gorilla Trekking</option>
-            <option value="3">Bird Watch</option>
-            <option value="5">Elephant Watch</option>
-            <option value="7">All of the Above</option>
-            <option value="9">None of the Above</option>
+            <%= Safari.all.each do |safari| %>
+              <option value="<%= safari.id %>"><%= safari.title %></option>
+            <% end %>
           </select>
           <select name="quality" id="quality" required="">
             <option value="Choose" selected="" disabled="">How Many People Are You Traveling With</option>
