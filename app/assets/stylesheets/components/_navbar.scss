@@ -40,7 +40,7 @@
 
   a {
     font-family: $secondary-font;
-    color: white !important;
+    color: white;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1px;
@@ -55,4 +55,20 @@
   &:focused {
     outline: 0;
   }
+}
+
+.nav-link {
+  color: white;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: white;
+    border-radius: 50px;
+    color: #3E3E3E !important;
+  }
+
+}
+
+.nav-item {
+  color: white;
 }
