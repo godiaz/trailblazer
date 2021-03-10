@@ -5,7 +5,7 @@ gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.2.3'
+gem 'rails', '6'
 gem 'redis'
 gem 'carrierwave', '~> 1.2'
 
